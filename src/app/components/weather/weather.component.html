@@ -1,0 +1,9 @@
+<div *ngIf="currentWeather">
+    <h1>{{ currentWeather.city }}</h1>
+    <p>{{ currentWeather.temp.current }} &deg;</p>
+    <h1>{{ currentWeather.main }}</h1>
+    <h2>Min: <span>{{ currentWeather.temp.min }}</span></h2>
+    <h2>Max: <span>{{ currentWeather.temp.max }}</span></h2>
+    <h2>Humidity: <span>{{ currentWeather.humidity }}</span></h2>
+    <h2>Feels like: <span>{{ currentWeather.temp.feels_like }}</span></h2>
+</div>
